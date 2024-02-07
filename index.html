@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #0f9e50;
+            background-image: linear-gradient(45deg, #0f9e50 0%, #f1ed76 100%);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgba(11, 11, 141, 0.397);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none ;
+            margin: 0 23px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .right a{
+            text-decoration: none;
+            color: white;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 550px;
+            /* margin: 80px 0; */
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            /* background-color: red; */
+            width: 34px;
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+        .rightsection{
+            /* background-color: red; */
+            width: 34px;
+            margin: 70px 0;
+        }
+        .rightsection img{
+            width:26rem;
+            height:20rem;
+            /* margin: 30px; */
+        }
+        .spname{
+            color: rgb(172, 121, 219);
+        }
+        .secondsection1{
+            background-color: #285a8c;
+            background-image: linear-gradient(62deg, #285a8c 0%, #E0C3FC 100%);
+
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* margin: auto; */
+            /* line-height: 1.6; */
+        }
+        .secondsection2{
+            background-color: #541d54;
+            background-image: linear-gradient(90deg, #541d54 0%, #88e5f1 100%);
+
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* margin: auto; */
+            /* line-height: 1.6; */
+        }
+        .secondsection3{
+            background-color: #5c125c;
+            background-image: linear-gradient(270deg, #5c125c 0%, #6fe5f5 100%);
+
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-evenly;
+            /* margin: auto; */
+            /* line-height: 1.6; */
+        }
+        #AboutMeSection{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .abtMe{
+            color: rgb(15, 15, 15);
+            margin-top: 0px;
+            letter-spacing: 6px;
+        }
+        .def{
+            margin: 60px;
+            margin-top: 40px;
+            line-height: 1.7;
+        }
+        hr{
+            height: 2.5px;
+            background-color: rgb(224, 224, 224);
+        }
+        img{
+            height:40px;
+            width: 50px;
+            /* width: 30%; */
+            /* background-size: cover; */
+        }
+        #SkillsSection{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+        }
+        .skills{
+            text-align: center;
+            width: 30%;
+            color: rgb(14, 14, 14);
+            margin-top: 2rem;
+            letter-spacing: 6px;
+        }
+        #SkillsSection ul{
+            margin-bottom: 50px;
+            list-style: none;
+        }
+        
+        .set{
+            height: 65%;
+            border: 2.5px solid rgb(13, 13, 13);
+            padding: 10px;
+        }
+        .prj{
+            border: 3px solid rgb(56, 39, 39);
+            padding: 10px;
+            margin-bottom: 80px;
+        }
+        #project{
+            color: rgb(15, 15, 15);
+            margin-top: 0px;
+            letter-spacing: 6px;
+        }
+        #project{
+            margin-top: 2rem;
+        }
+        .nameofProjects{
+            color: black;
+            width: 100%;
+            height: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .nameofProjects .prj{
+            background-color: #344354;
+            background-image: linear-gradient(30deg, #566b82 0%, #ddc0f9 100%);
+
+        }
+        .nameofProjects p{
+            font-size: 0.7rem;
+        }
+        .imggrp{
+            height: 55px;
+            margin-bottom: 2rem;
+        }
+        .verticle1{
+            border-left: 5px solid black;
+            height: 200px;
+            position: absolute;
+            left: 5.9%;
+        }
+        .verticle2{
+            border-left: 5px solid black;
+            height: 200px;
+            position: absolute;
+            left: 25%;
+        }
+        .verticle3{
+            border-left: 5px solid black;
+            height: 200px;
+            position: absolute;
+            left: 47%;
+        }
+        .verticle4{
+            border-left: 5px solid black;
+            height: 200px;
+            position: absolute;
+            left: 70%;
+        }
+        .verticle5{
+            border-left: 5px solid black;
+            height: 200px;
+            position: absolute;
+            left: 94%;
+        }
+        nav{ 
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Snehal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href=""><li>Home</li></a>
+                    <a href="#AboutMeSection"><li>About</li></a>
+                    <a href="#SkillsSection"><li>Skills</li></a>
+                    <a href="#project"><li>Projects</li></a>
+                    <a href="eventform.html"><li>Contact me</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="firstsection">
+            <div class="leftsection">
+                Hie, My Name is <span class="spname">Snehal</span>
+                <div>I am a passionate</div> <div>Frontend Developer.</div>
+            </div>
+            <div class="rightsection">
+                <img src="PngItem_1127587.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <!-- ABOUT ME  -->
+        <div class="secondsection1">
+            <div id="AboutMeSection">
+                <div class="abtMe"><b>About Me</b>
+                </div>
+                <div class="def">
+                    Hey there! I'm Snehal, a lifelong learner with a passion for acquiring new skills and knowledge. Currently immersed in the exciting journey of learning, I thrive on the challenge of expanding my expertise.
+    
+                    In my quest for growth, I'm continually adding to my skill set, embracing opportunities to delve into diverse fields and disciplines. Whether it's mastering the intricacies of coding or honing my logical skill, I'm always eager to broaden my horizons.
+    
+                    With a foundation built on curiosity and enthusiasm, I approach every learning opportunity with an open mind and a drive to excel. I believe that learning is not just about acquiring qualifications but about embracing new perspectives and pushing the boundaries of what's possible.
+    
+                    Beyond my dedication to learning, I'm sports player and active participant in co-curricular activities.
+                    <div>Let's connect and embark on this journey of growth together!</div>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+        <!-- SERVICES -->
+        <div class="secondsection2">
+            <div id="SkillsSection">
+                <div class="skills"><b>Skills</b>
+                </div>
+                <div class="skillSet">
+                    <div>My Skills revolve around</div> 
+                    <div class="set">
+                        <ul>
+                            <li>> Basics DSA(Java)</li>
+                            <li>> HTML, CSS </li>
+                            <li>> JavaScript</li>
+                            <li>> Github</li>
+                            <li>> Swift</li>
+                            <li>> AWS(Learning)</li>
+                            <li>> DBMS</li>
+                            <li>> Python</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="imggrp">
+                        <img src="tailwind-css-logo.png" alt="">
+                        <img src="css.png" alt="">
+                        <img src="bootstrap.png" alt="">
+                        <img src="html.png" alt="">
+                        <img src="JavaScript.png" alt="">
+                        <img src="git.png" alt="">
+                        <img src="github.png" alt="">
+                        <img src="nodejs.png" alt="">
+                        <img src="react.png" alt="">
+                        <img src="Redux.png" alt="">
+                        <img src="Sanity.png" alt="">
+                        <img src="Graphql.png" alt="">
+                        <img src="next_logo.png" alt="">
+                        <img src="mongodb.png" alt="">
+    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- PROJECTS -->
+        <div class="secondsection3">
+            <div id="project"><b>Projects</b></div>
+            <div class="nameofProjects">
+                <div class="verticle1"></div>
+                <div class="prj">
+                    Amazon Clone
+                    <p>Used HTML and CSS</p>
+                </div>
+                <div class="verticle2"></div>
+                <div class="prj">
+                    Basic Calculator
+                    <p>Used HTML, CSS and JS</p>
+                </div>
+                <div class="verticle3"></div>
+                <div class="prj">
+                    Other Small Pages 
+                    <p>Using HTML and CSS</p>
+                </div>
+                <div class="verticle4"></div>
+                <div class="prj">
+                    Admission Project
+                    <p>Used Python, tkinter and MySQL</p>
+                </div>
+                <div class="verticle5"></div>
+            </div>
+        </div>
+        <hr>
+    </main>
+</body>
+</html>
